@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ion_ginkgo.mk
+    $(LOCAL_DIR)/aosp_ginkgo.mk
