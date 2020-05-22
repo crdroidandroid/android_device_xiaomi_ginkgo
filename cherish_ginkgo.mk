@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-export CHERISH_BUILD_TYPE:= Test_Build
+export CHERISH_BUILD_TYPE:= Beta
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cherish.maintainer=
+    ro.cherish.maintainer=KhuongHung
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
