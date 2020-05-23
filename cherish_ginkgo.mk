@@ -11,7 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-export CHERISH_BUILD_TYPE:= Beta
+export CHERISH_BUILD_TYPE:= OFFICIAL
+
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cherish.maintainer=KhuongHung
