@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_ginkgo.mk
+    $(LOCAL_DIR)/ion_ginkgo.mk
