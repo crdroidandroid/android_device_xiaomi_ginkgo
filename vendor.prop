@@ -235,3 +235,6 @@ ro.surface_flinger.use_color_management=1
 
 # Time
 persist.vendor.delta_time.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
