@@ -6,7 +6,7 @@ on early-init
     write /dev/stune/schedtune.boost 50
     write /dev/stune/schedtune.prefer_idle 1
 
-on late-init
+on post-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
@@ -45,25 +45,6 @@ on boot
 
     # Thermal Profile
     write /sys/class/thermal/thermal_message/sconfig 0
-
-service nqnfcinfo /vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-    override
-    disabled
-
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
-    class hal
-    user nfc
-    group nfc
-    override
-    disabled
-
-on property:ro.product.device=willow
-    enable nqnfcinfo
-    enable nqnfc_2_0_hal_service
 
 on property:persist.sys.device_provisioned=1
     # Use foreground cpuset for dex2oat
@@ -114,3 +95,7 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1536000
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl 1
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 902400
+
+on post-fs-data
+    #Create folder of NFC
+    mkdir /data/vendor/nfc 0770 nfc nfc
