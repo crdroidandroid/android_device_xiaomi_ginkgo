@@ -16,15 +16,11 @@
  */
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.ginkgo"
 
-#include <hardware/hw_auth_token.h>
+#include <log/log.h>
 
-#include <hardware/hardware.h>
-#include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
 
 #include <cutils/properties.h>
-#include <inttypes.h>
-#include <unistd.h>
 
 namespace android {
 namespace hardware {
