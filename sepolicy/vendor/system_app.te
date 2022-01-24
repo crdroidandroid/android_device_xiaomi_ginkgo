@@ -1,4 +1,3 @@
-allow system_app vendor_hal_pasrmanager_qti:binder call;
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file { getattr open read };
 allow system_app wificond:binder call;
@@ -6,7 +5,6 @@ allow system_app wificond:binder call;
 hal_client_domain(system_app, vendor_hal_fm)
 allow system_app kcal_dev:dir search;
 allow system_app kcal_dev:file rw_file_perms;
-allow system_app sysfs_fcharge:file rw_file_perms;
 allow system_app sysfs_leds:dir search;
 allow system_app vibrator_dev:dir search;
 allow system_app vibrator_dev:file rw_file_perms;

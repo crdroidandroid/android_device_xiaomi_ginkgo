@@ -33,12 +33,15 @@
 # Fingerprint devices
 /dev/goodix_fp                                                                                 u:object_r:fingerprint_device:s0
 
-# Mlipay
-/(vendor|system/vendor)/bin/mlipayd@1\.1                                                       u:object_r:hal_mlipay_default_exec:s0
-
 # KCAL
 /sys/devices/platform/kcal_ctrl.0(/.*)?         u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?       u:object_r:kcal_dev:s0
 
 # Vibrator
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,vibrator@5700/leds/vibrator/vtg_level u:object_r:vibrator_dev:s0
+
+# Power HAL
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr   u:object_r:hal_power_default_exec:s0
+
+# Data files
+/data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0

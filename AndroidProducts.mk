@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 LineageOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #

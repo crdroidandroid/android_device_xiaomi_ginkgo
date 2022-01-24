@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,58 +16,64 @@
 # limitations under the License.
 #
 
-import os
-import sys
 from hashlib import sha1
+import sys
 
-device = 'ginkgo'
-vendor = 'xiaomi'
+device='willow'
+vendor='xiaomi'
 
-with open('proprietary-files.txt', 'r') as f:
-    lines = f.read().splitlines()
+lines = [ line for line in open('proprietary-files.txt', 'r') ]
 vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
 needSHA1 = False
 
-
 def cleanup():
-    for index, line in enumerate(lines):
-        # Skip empty or commented lines
-        if len(line) == 0 or line[0] == '#' or '|' not in line:
-            continue
+  for index, line in enumerate(lines):
+    # Remove '\n' character
+    line = line[:-1]
 
-        # Drop SHA1 hash, if existing
-        lines[index] = line.split('|')[0]
+    # Skip empty or commented lines
+    if len(line) == 0 or line[0] == '#':
+      continue
 
+    # Drop SHA1 hash, if existing
+    if '|' in line:
+      line = line.split('|')[0]
+      lines[index] = '%s\n' % (line)
 
 def update():
-    for index, line in enumerate(lines):
-        # Skip empty lines
-        if len(line) == 0:
-            continue
+  for index, line in enumerate(lines):
+    # Remove '\n' character
+    line = line[:-1]
 
-        # Check if we need to set SHA1 hash for the next files
-        if line[0] == '#':
-            needSHA1 = (' - from' in line)
-            continue
+    # Skip empty lines
+    if len(line) == 0:
+      continue
 
-        if needSHA1:
-            # Remove existing SHA1 hash
-            line = line.split('|')[0]
+    # Check if we need to set SHA1 hash for the next files
+    if line[0] == '#':
+      needSHA1 = (' - from' in line)
+      continue
 
-            filePath = line.split(';')[0].split(':')[-1]
-            if filePath[0] == '-':
-                filePath = filePath[1:]
+    if needSHA1:
+      # Remove existing SHA1 hash
+      line = line.split('|')[0]
+      filePath = line.split(':')[1] if len(line.split(':')) == 2 else line
 
-            with open(os.path.join(vendorPath, filePath), 'rb') as f:
-                hash = sha1(f.read()).hexdigest()
+      if filePath[0] == '-':
+        file = open('%s/%s' % (vendorPath, filePath[1:]), 'rb').read()
+      else:
+        file = open('%s/%s' % (vendorPath, filePath), 'rb').read()
 
-            lines[index] = '%s|%s' % (line, hash)
-
+      hash = sha1(file).hexdigest()
+      lines[index] = '%s|%s\n' % (line, hash)
 
 if len(sys.argv) == 2 and sys.argv[1] == '-c':
-    cleanup()
+  cleanup()
 else:
-    update()
+  update()
 
 with open('proprietary-files.txt', 'w') as file:
-    file.write('\n'.join(lines) + '\n')
+  for line in lines:
+    file.write(line)
+
+  file.close()
