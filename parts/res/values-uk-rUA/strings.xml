@@ -16,11 +16,16 @@
      limitations under the License.
 -->
 <resources>
+     <!-- Xiaomi Parts -->
+    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_summary">Додаткові налаштування</string>
+    <string name="audio_title">Аудіо</string>
     <!-- Dirac settings -->
     <string name="dirac_title">Покращення звуку \"Мі Sound\"</string>
     <string name="dirac_summary">Поліпшити якість звуку</string>
     <string name="dirac_headset_title">Тип навушників</string>
     <string name="dirac_preset_title">Виберіть налаштування</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">За замовчуванням</string>
     <string name="dirac_headset_earbuds">Навушники Xiaomi</string>
@@ -44,6 +49,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">За замовчуванням</string>
     <string name="dirac_preset_rock">Рок</string>
@@ -56,6 +62,39 @@
     <string name="dirac_preset_country">Кантрі</string>
     <string name="dirac_preset_dance">Танцювальна</string>
     <string name="dirac_preset_metal">Метал</string>
+    <string name="dirac_preset_bass_booster">Посилення басу</string>
+
      <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Mi звук</string>
+    <string name="dirac_qs_tile_title">Покращення звуку \"Мі Sound\"</string>
+
+     <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динаміка</string>
+    <string name="clear_speaker_summary">Відтворити 30-ти секундний звук для очистки динаміка</string>
+    <string name="clear_speaker_description">Включить цей параметр 1-2 рази, якщо динамік трохи забитий. Також поставте звук на максимальну гучність.\n\nЯкщо динамік сильно забитий, запустіть цю процедуру 2-5 разів и потрясіть телефоном. Динамік повинен бути направленим вниз</string>
+    
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Калібрування кольорів екрану</string>
+    <string name="kcal_settings_summary">Редагуйте кольори вашого екрану, використовуючи KCAL</string>
+    <string name="kcal_enable_title">Конфігурації кольорів екрану</string>
+    <string name="kcal_enable_summary">Вмикає налаштування кольорів екрану для його редагування</string>
+    <string name="color_red">Червоний</string>
+    <string name="color_green">Зелений</string>
+    <string name="color_blue">Синій</string>    
+    <string name="kcal_calibration_preference_category_title">Калібрування кольорів</string>
+    <string name="saturation_slider_title">Насиченість</string>
+    <string name="reset_default_button_title">Скинути налаштування</string>
+    <string name="reset_default_button_summary">Скидає всі налаштування KCAL</string>
+    <string name="contrast_slider_title">Контраст</string>
+
+     <!-- Vibration -->
+    <string name="vibration_title">Налаштування вібрації</string>
+    <string name="vibration_strength_title">Сила</string>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Налаштування РК-дисплея</string>
+    <string name="lcd_features_summary">Режим підвищеної яскравості і контентне регулювання</string>
+    <string name="lcd_hbm_title">Режим підвищеної яскравості</string>
+    <string name="lcd_hbm_tile_title">Режим підвищеної яскравості</string>
+    <string name="lcd_cabc_title">Контентне регулювання</string>
+    <string name="lcd_features_info">Режим підвищеної яскравості збільшує максимальну яскравість дисплею для покращення видимості при сонячному світлі. Збільшує енергоспоживання. Може призвести до нагріву дисплею.\n\nКонтентне регулювання регулює яскравість дисплея та кольорів залежно від поточного вмісту, щоб знизити енергоспоживання без погіршення якості зображення.</string>
 </resources>

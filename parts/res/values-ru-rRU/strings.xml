@@ -63,9 +63,10 @@
     <string name="dirac_preset_country">Кантри</string>
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
+    <string name="dirac_preset_bass_booster">Усиление баса</string>
 
     <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Mi звук</string>
+    <string name="dirac_qs_tile_title">Улучшение звука Mi</string>
 
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Очистка динамика</string>
@@ -85,4 +86,16 @@
     <string name="reset_default_button_title">Сбросить настройки</string>
     <string name="reset_default_button_summary">Сбрасывает все настройки KCAL</string>
     <string name="contrast_slider_title">Контраст</string>
+
+     <!-- Vibration -->
+    <string name="vibration_title">Настройка вибрации</string>
+    <string name="vibration_strength_title">Сила</string>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Настройки ЖК-дисплея</string>
+    <string name="lcd_features_summary">Режим повышенной яркости и контентная регулировка</string>
+    <string name="lcd_hbm_title">Режим повышенной яркости</string>
+    <string name="lcd_hbm_tile_title">Режим повышенной яркости</string>
+    <string name="lcd_cabc_title">Контентная регулировка</string>
+    <string name="lcd_features_info">Режим повышенной яркости увеличивает максимальную яркость дисплея для улучшения видимости при солнечном свете. Увеличивает энергопотребление. Может привести к нагреву дисплея.\n\nКонтентная регулировка регулирует яркость дисплея и цветов в зависимости от текущего содержимого, чтобы снизить энергопотребление без ухудшения качества изображения.</string>
 </resources>
