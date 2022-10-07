@@ -1938,7 +1938,6 @@ vendor/lib/libqmi_encdec.so|db45b38dda5ce833029c1870c948dcabe36ad721
 vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
 
 # Radio - from LA.UM.9.11.r1-04500-NICOBAR.0
-vendor/bin/ATFWD-daemon|0646e296cdc04a5fd755d6a5a8fceb2cd9fa48ad
 vendor/bin/adpl|a7ef739a68cffa6269cf215f0c21de11cd33f8fc
 vendor/bin/hw/qcrild|b593e369985cebb4235066363e77f861eb46662f
 vendor/bin/netmgrd|8d8c30e5d46365867bb311ebac3fbba45bc9c625
@@ -1964,7 +1963,6 @@ vendor/etc/init/shsusrd.rc|d35c03f7825f629f8082cf3947bdbef4062276ac
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
-vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
 vendor/lib64/libconfigdb.so|b9c23b2bf88b7fbce47dcfd13f959bd313caf06a
 vendor/lib64/libdsi_netctrl.so|39e2e3c1716424f4f91910ff877124be96cbf5ab
 vendor/lib64/liblqe.so|125d2a0c964e59e0a6c79737920cf079a932d290
@@ -1993,7 +1991,6 @@ vendor/lib64/qcrild_librilutils.so|5d9354d0e0211c049ed731405fb8dbe3d84fa963
 vendor/lib64/qtibus.so|59c0ad0bb446b3f9721849accada24590a9a7f14
 vendor/lib64/qtimutex.so|49fb2f512a10bf2de587f44156382863c839d2c4
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|911463b46f38268a6078fb4d3058f5e0a6ed0166
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|1865d53fd0b84f3c69ef9b274a69f7a5f9f04a22
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|881a8f10a1230752a6e864b4b4015e1f3c14820b
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so|13f3ff72bd8b247e7fd87286c113207ef82f1337
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so|c04d1aedd0b3a4e0f28c658ce796d43176935a79

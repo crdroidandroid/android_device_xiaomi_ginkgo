@@ -701,11 +701,6 @@ service qvop-daemon /vendor/bin/qvop-daemon
     user system
     group system drmrpc
 
-service vendor.atfwd /vendor/bin/ATFWD-daemon
-    class late_start
-    user system
-    group system radio
-
 service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/global
     class main
     capabilities NET_ADMIN NET_RAW
