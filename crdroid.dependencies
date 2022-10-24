@@ -1,10 +1,10 @@
 [
     {
-        "repository":   "android_kernel_xiaomi_ginkgo",
+        "repository":   "crdroidandroid/android_kernel_xiaomi_ginkgo",
         "target_path":  "kernel/xiaomi/ginkgo"
     },
     {
-        "repository":   "proprietary_vendor_xiaomi_ginkgo",
+        "repository":   "crdroidandroid/proprietary_vendor_xiaomi_ginkgo",
         "target_path":  "vendor/xiaomi/ginkgo"
     }
 ]
