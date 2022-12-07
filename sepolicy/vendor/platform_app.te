@@ -1,4 +1,9 @@
+
 # FPS info
 allow platform_app sysfs_graphics:file r_file_perms;
 allow platform_app sysfs_fps:file { getattr open read };
 allow platform_app sysfs_graphics:dir search;
+
+# Dolby
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+binder_call(platform_app, hal_dms_default)
