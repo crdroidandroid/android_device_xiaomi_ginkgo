@@ -52,24 +52,23 @@ on boot
     # Thermal Profile
     write /sys/class/thermal/thermal_message/sconfig 0
 
-service nqnfcinfo /vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
-    disabled
-
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     class hal
     user nfc
     group nfc
+    disabled
+
+service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
     override
+    class hal
+    user nfc
+    group nfc
     disabled
 
 on property:ro.product.device=willow
-    enable nqnfcinfo
-    enable nqnfc_2_0_hal_service
+    enable vendor.nfc_hal_service
+    enable nqnfc_1_2_hal_service
 
 on property:ro.boot.hwversion=*
     setprop vendor.boot.hwversion ${ro.boot.hwversion}
