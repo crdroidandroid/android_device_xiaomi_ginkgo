@@ -494,3 +494,7 @@ on post-fs && property:ro.boot.product.hardware.sku=ginkgo
 
 on post-fs && property:ro.boot.product.hardware.sku=willow
     mount none /vendor/firmware_mnt/image/bdf_c3x.bin /vendor/firmware_mnt/image/bdwlan.bin bind
+
+on post-fs-data && property:ro.boot.product.hardware.sku=willow
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
