@@ -729,7 +729,7 @@
         <item>"/system/framework/ext.jar"</item>
         <item>"/system/lib64/libEGL.so"</item>
         <item>"/system/lib64/libhwui.so"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
         <item>"/vendor/lib64/egl/libGLESv2_adreno.so"</item>
         <item>"/vendor/lib64/libgsl.so"</item>
         <item>"/vendor/lib64/libllvm-qgl.so"</item>
