@@ -31,3 +31,9 @@ cc_binary {
     ],
     proprietary: true,
 }
+
+cc_library_shared {
+    name: "libvendor.goodix.hardware.biometrics.fingerprint@2.1",
+    shared_libs: ["vendor.goodix.hardware.biometrics.fingerprint@2.1"],
+    vendor_available: true,
+}
