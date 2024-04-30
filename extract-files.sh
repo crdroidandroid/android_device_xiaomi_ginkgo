@@ -82,6 +82,9 @@ function blob_fixup() {
         [ "$2" = "" ] && return 0
             grep -q libcamera_provider_shim.so "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
 	        ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+            ;;
     esac
 
     return 0

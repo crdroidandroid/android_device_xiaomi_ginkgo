@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libpiex_shim \
+    libgui_shim \
     libui_shim.vendor
 
 PRODUCT_COPY_FILES += \
