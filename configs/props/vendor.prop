@@ -246,5 +246,10 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.use_color_management=1
 
+# Spatial Audio
+ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
+persist.vendor.audio.spatializer.speaker_enabled=true
+
 # Time
 persist.vendor.delta_time.enable=true
