@@ -176,7 +176,6 @@ vendor/lib/libmpbase.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libSNPE.so
-vendor/lib/libswvdec.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
@@ -1773,7 +1772,6 @@ vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib64/hw/sound_trigger.primary.trinket.so
 
 # Media - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/lib/libMpeg4SwEncoder.so|92698c2830156bbca6297ad599d9e0f916139f00
 -vendor/lib64/libMpeg4SwEncoder.so|46cca30c76db78d8c5d6b99c2c7e5a00c414bc4f
 vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
@@ -1781,16 +1779,12 @@ vendor/lib/libFlacSwDec.so|01c7a51d93c2fe447e23c1210832b39b171393e3
 vendor/lib/libI420colorconvert.so|976e00c9e8966e4c7100099666846770d34f4153
 vendor/lib/libOmxAacDec.so|9dd31bc40cde583f1b0e2b4a9fc802145ef69164
 vendor/lib/libOmxAlacDec.so|fa50ab06523c4af5c01255afcc7bb98700db68f8
-vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
 vendor/lib/libOmxAmrDec.so|f7b31c4c0b8acd8422573df6fcfb1103062d6f9c
 vendor/lib/libOmxAmrwbplusDec.so|0e88d271c603e0d6a231a24aca51561d2b604794
 vendor/lib/libOmxApeDec.so|f0fac8e060577bd6b11d555778fe252be48afbac
-vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
 vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
 vendor/lib/libOmxG711Dec.so|922eba61fdcad6619fa03f456e066e572e0c6ff9
 vendor/lib/libOmxQcelp13Dec.so|1836ba707a7a1642ec0edf236be0e713f18bb90b
-vendor/lib/libOmxSwVdec.so|07fbe117dc1aa5b657981c50bd77e8fc1954f600
-vendor/lib/libOmxSwVencMpeg4.so|ff21c167212938a695877847c12b342af3ec84e8
 vendor/lib/libOmxWmaDec.so|6c8840e2d685a665c633d301afe916d83536e3fd
 vendor/lib/libOmxVideoDSMode.so|979e5cb96260c8fa60eb55825a2a22273f524c65
 vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
