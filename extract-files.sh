@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -58,13 +58,16 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/etc/camera/camera_config.xml)
+        [ "$2" = "" ] && return 0
             # Remove vtcamera for ginkgo
             gawk -i inplace '{ p = 1 } /<CameraModuleConfig>/{ t = $0; while (getline > 0) { t = t ORS $0; if (/ginkgo_vtcamera/) p = 0; if (/<\/CameraModuleConfig>/) break } $0 = t } p' "${2}"
             ;;
 		vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so | vendor/lib64/libgoodixhwfingerprint.so)
+        [ "$2" = "" ] && return 0
 			grep -q "libhidlbase-v32.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
         ;;
         vendor/lib64/libwvhidl.so | vendor/lib64/mediadrm/libwvdrmengine.so)
+        [ "$2" = "" ] && return 0
 	        "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
 	        ;;
 	    vendor/lib/libalRnBRT_GL_GBWRAPPER.so)
@@ -72,9 +75,16 @@ function blob_fixup() {
             grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib64/libwvhidl.so | vendor/lib64/mediadrm/libwvdrmengine.so)
+        [ "$2" = "" ] && return 0
             grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
 	        ;;
     esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 # Initialize the helper
