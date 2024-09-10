@@ -156,7 +156,8 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     libcrypto-v33 \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm@1.3.vendor \
+    libcrypto_shim
 
 # Fingerprint
 PRODUCT_PACKAGES += \
