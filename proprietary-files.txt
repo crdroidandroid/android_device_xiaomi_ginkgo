@@ -1388,6 +1388,7 @@ vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
 vendor/lib/libcdsprpc.so|50da6b22e74ee06bd1abfd8ee2649b9fd0266ca7
 vendor/lib/libcdsp_default_listener.so|6a3f97faf26da3d01f7895d37c09c8bc62030e0a
+-vendor/lib/libcdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
 vendor/lib64/libcdsprpc.so|e7629a092ba6954c08305a4c8cc08d95313cc2aa
 vendor/lib64/libcdsp_default_listener.so|81e5f4737bfb7e2f0a906183b2a8357a5053ee5c
