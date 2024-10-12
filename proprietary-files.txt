@@ -149,7 +149,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|6fe1aed00cd77677706cd6c62f
 # Camera
 vendor/lib/hw/camera.trinket.so
 vendor/lib/libalCFR.so
-vendor/lib/libalLDC.so
+vendor/lib/libalLDC.so;DISABLE_CHECKELF
 vendor/lib/libalhLDC.so
 vendor/lib/libalRnBRT_GL_GBWRAPPER.so
 vendor/lib/libcamera_scene.so
@@ -179,9 +179,9 @@ vendor/lib/libSNPE.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
-vendor/lib/libVDSuperPhotoAPI.so
+vendor/lib/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
 vendor/lib/libvideoutils.so
-vendor/lib/libvidhance.so
+vendor/lib/libvidhance.so;DISABLE_CHECKELF
 vendor/lib/libxiaomiAI_sensor.so
 vendor/lib/mibokeh_660_opencl.bin
 vendor/lib/miwatermark.so
@@ -1259,8 +1259,8 @@ vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
@@ -1328,8 +1328,8 @@ vendor/lib64/libmmcamera2_q3a_core.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera2_stats_lib.so
 vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc2.so;DISABLE_CHECKELF
+vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
