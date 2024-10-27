@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
     libcrypto-v33 \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.3.vendor \
-    libcrypto_shim
+    libcrypto_shim.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
