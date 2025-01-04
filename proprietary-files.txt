@@ -1787,7 +1787,6 @@ vendor/lib/libOmxAmrwbplusDec.so|0e88d271c603e0d6a231a24aca51561d2b604794
 vendor/lib/libOmxApeDec.so|f0fac8e060577bd6b11d555778fe252be48afbac
 vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
 vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
-vendor/lib/libOmxEvrcDec.so|90bbf4baf4f8b830534a2f94aedef9bd44e81a13
 vendor/lib/libOmxG711Dec.so|922eba61fdcad6619fa03f456e066e572e0c6ff9
 vendor/lib/libOmxQcelp13Dec.so|1836ba707a7a1642ec0edf236be0e713f18bb90b
 vendor/lib/libOmxSwVdec.so|07fbe117dc1aa5b657981c50bd77e8fc1954f600
