@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
     com.google.android.apps.dialer.call_recording_audio.features.xml
 
 # Camera
-$(call inherit-product, vendor/miuicamera/config.mk)
+# $(call inherit-product, vendor/miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
