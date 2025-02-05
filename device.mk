@@ -285,7 +285,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
-    libOmxG711Enc \
     libplatformconfig \
     libstagefrighthw \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
