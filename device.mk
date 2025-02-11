@@ -281,7 +281,6 @@ $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libmm-omxcore \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
